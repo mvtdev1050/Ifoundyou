@@ -16,6 +16,7 @@ class Chat extends Model
     }
 
     public function getReceiver() {
+        print_r('test');
         return $this->hasOne('App\User','id','sender_id');
     }
 }
